@@ -21,7 +21,7 @@ function reporter(opts) {
 
   this.specDone = function(spec) {
     specResults.push(spec);
-    if (spec.passed) {
+    if (spec.status === 'passed') {
     	summary.pass++;
 	} else {
 		summary.fail++;
